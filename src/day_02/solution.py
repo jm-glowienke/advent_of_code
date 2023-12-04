@@ -1,4 +1,3 @@
-import math
 from functools import reduce
 
 from src._utils import get_input_file_path
