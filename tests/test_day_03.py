@@ -1,0 +1,14 @@
+from src._utils import get_example_file_path
+from src.day_03.solution import solve_part_1, solve_part_2
+
+
+def test_example():
+    with open(get_example_file_path(3, 1)) as f:
+        lines = f.readlines()
+    assert solve_part_1(lines) == 8
+
+
+def test_example_part_2():
+    with open(get_example_file_path(3, 2)) as f:
+        lines = f.readlines()
+    assert solve_part_2(lines) == 2286
